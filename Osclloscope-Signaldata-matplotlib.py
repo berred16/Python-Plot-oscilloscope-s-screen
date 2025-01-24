@@ -33,7 +33,7 @@ data = (hmo1024.query('CHANnel1:DATA?'))
 # modify the result of date. Removes the ","
 m_points = np.array([float(i) for i in data.split(',')])
 
-# aquire date, save it as float
+# aquire samplerate, save it as float
 samplerate = float(hmo1024.query('ACQuire:SRATe?'))
 
 # Now a function from the NumPy library in Python that is used to
