@@ -30,7 +30,7 @@ hmo1024.write('CHANnel1:SCALe 2')
 # query data from oscilloscope
 data = (hmo1024.query('CHANnel1:DATA?'))  
 
-# modify the result of date. Removes the ","
+# modify the result of data. Removes the ","
 m_points = np.array([float(i) for i in data.split(',')])
 
 # aquire samplerate, save it as float
